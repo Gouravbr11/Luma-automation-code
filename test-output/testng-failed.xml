@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Luma.tests.EndToEndTest">
+      <class name="Luma.tests.Smoke">
         <methods>
-          <include name="subscribeNewsletters"/>
           <include name="launchUrl"/>
+          <include name="create_account" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- Luma.tests.EndToEndTest -->
+      </class> <!-- Luma.tests.Smoke -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

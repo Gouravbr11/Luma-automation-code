@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import Luma.pageObjects.Luma_LandingPage;
@@ -52,7 +53,14 @@ public class BaseTestLuma {
 		driver=initializeDriver();
 		driver.get("https://magento.softwaretestingboard.com/");
 	}
-	
+
+	@AfterTest(alwaysRun = true)
+	public void closeMtd() throws IOException
+	{
+		
+		driver=initializeDriver();
+		driver.close();
+	}
 	
 	
 }

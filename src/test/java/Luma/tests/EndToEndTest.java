@@ -22,7 +22,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class EndToEndTest extends BaseTestLuma {
 	
 	
-	@Test(dataProvider = "parameters", enabled =false)
+	@Test(dataProvider = "parameters", enabled =true)
 	public void endToEnd1(HashMap<String,String> datas) throws InterruptedException {
 		
 		Luma_LandingPage lp=new Luma_LandingPage(driver);

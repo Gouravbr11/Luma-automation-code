@@ -33,6 +33,16 @@ public class Luma_LandingPage extends ResuasbleElements{
 	WebElement signInBtn;
 	
 	
+	@FindBy(xpath ="(//ul//li)[3]")
+	WebElement createLink;
+	
+	public Luma_createAccount create_accLink() {
+		createLink.click();
+		Luma_createAccount crAcc=new Luma_createAccount(driver);
+		return crAcc;
+	}
+	
+	
 	
 
 
