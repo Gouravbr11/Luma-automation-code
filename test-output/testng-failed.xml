@@ -5,8 +5,9 @@
     <classes>
       <class name="Luma.tests.Smoke">
         <methods>
+          <include name="closeMtd"/>
+          <include name="signOut"/>
           <include name="launchUrl"/>
-          <include name="create_account" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- Luma.tests.Smoke -->
     </classes>
