@@ -44,7 +44,7 @@ public class EndToEndTest extends BaseTestLuma {
 	{
 		Luma_homePage hp=new Luma_homePage(driver);
 		String successMsg=hp.subscribeNews("gouravbr13@gmail.com");
-		Assert.assertEquals(successMsg, "Thank you for your subscription.");
+		Assert.assertEquals(successMsg, "Thanks you for your subscription.");
 	}
 	
 	@DataProvider(name="parameters")
